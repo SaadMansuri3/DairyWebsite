@@ -1,3 +1,23 @@
+@font-face{
+    src: url(../Fonts/Poppins-Black.ttf);
+    font-family: PoppinsBlack;
+}
+@font-face{
+    src: url(../Fonts/Poppins-Regular.ttf);
+    font-family: PoppinsReg;
+}
+@font-face{
+    src: url(../Fonts/Roboto-Regular.ttf);
+    font-family: RobotoReg;
+}
+@font-face{
+    src: url(../Fonts/CormorantGaramond-Medium.ttf);
+    font-family: CormorantMed;
+}
+@font-face{
+    src: url(../Fonts/CormorantGaramond-Regular.ttf);
+    font-family: CormorantReg;
+}
 *{
     box-sizing: border-box;
 }
@@ -14,6 +34,25 @@ body{
     padding: 0;
     width: 100%;
 }
+
+#HomeLogoBtn:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
 #SecondDiv{
     background-image: url(../Images/WihTitle.jpg);
     background-repeat: no-repeat center fixed;
@@ -24,9 +63,9 @@ body{
 }
 
 .TopContainer{
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
+    font-family: PoppinsReg;
     font-weight: 900;
     display: flex;
     justify-content: center;
@@ -40,7 +79,8 @@ body{
 
 header {
     background-color: white;
-  /* background: #52c76f; */
+    width: 100%;
+
 }
 
 header::after {
@@ -93,84 +133,17 @@ nav li a::before {
   transition: all ease-in-out 250ms;
 }
 
-nav li a:hover::before {
+nav li a:hover::before{
   width: 100%;
 }
 
-
-/* .TopButtonsDiv ul li{
-    display: inline-block;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-
+h1,h2,h3{
+    font-family: CormorantReg;
 }
-.ActualButton{
-    margin-top: 25px;
-    vertical-align: top;
-}
-.TopButtonsDiv ul li a{
-    vertical-align: top;
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    display: flex;
-    z-index: 1;
-}
-
-nav ul li:not(:first-child){
-    margin-left: 30px;
-}
-
-.TopLeftButtonUl li::before{
-    content: "";
-    position: absolute;
-    height: 33.33%;
-    width: 100%;
-    background-color: #0D7CFF;
-    right: 0;
-    z-index: 0;
-    top: 33.33%;
-}
-
-.TopLeftButtonUl li ::after{
-    content: "";
-    position: absolute;
-    height: 33.33%;
-    width: 100%;
-    background-color: #0D7CFF;
-    left: 0;
-    z-index: 0;
-    bottom: 0;
-}
-
-.TopLeftButtonUl li a::before{
-    position: absolute;
-    content: "";
-    height: 33.33%;
-    width: 0;
-    background-color: #0D7CFF;
-    bottom: 66.66%;
-    left: 0;;
-}
-
-
-.TopButtonsDiv{
-    height:fit-content;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px 15px 10px -15px #111;
-}
-
-.SeeMore{
-    margin-top: 34%;
-    margin-left: 21.5%;
-} */
-
 .SecondContainer,.ThirdContainer{
     display: flex;
     margin-top: 125px;
+    font-family: RobotoReg
 }
 
 .SecondParaDiv,.ThirdParaDiv{
@@ -190,7 +163,7 @@ nav ul li:not(:first-child){
 #FirstPara,#SecondPara{
     font-size: 20px;
     font-family: Poppins,sans-serif;
-    color: rgb(0, 36, 56);
+    color: #002855
 }
 
 .CardContainer{
@@ -210,6 +183,70 @@ nav ul li:not(:first-child){
 
 }
 
-/* Here */
+/* Button Css Here */
 
+.noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+          -webkit-tap-highlight-color: transparent;
+  }
+  
+  button {
+      width: 150px;
+      height: 50px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      background: rgb(52, 236, 98);
+      border: none;
+      border-radius: 5px;
+      box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+      background: #22ca4c;
+  }
+  
+  button, button span {
+      transition: 200ms;
+  }
+  
+  button .text {
+      transform: translateX(35px);
+      color: white;
+      font-weight: bold;
+      font-family: CormorantReg;
+      font-size:  18px;
+  }
+  
+  button .icon {
+      position: absolute;
+      border-left: 1px solid #21f01a;
+      transform: translateX(110px);
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
 
+  
+  button:hover {
+      background: #028618;
+  }
+  
+  button:hover .text {
+      color: transparent;
+  }
+  
+  button:hover .icon {
+      width: 150px;
+      border-left: none;
+      transform: translateX(0);
+  }
+  
+  button:focus {
+      outline: none;
+  }
