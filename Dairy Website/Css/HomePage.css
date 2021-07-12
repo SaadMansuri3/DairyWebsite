@@ -15,7 +15,7 @@ body{
     width: 100%;
 }
 #SecondDiv{
-    background-image: url(../Images/WithTitle.jpg);
+    background-image: url(../Images/WihTitle.jpg);
     background-repeat: no-repeat center fixed;
     background-size: cover;
     width: 100%;
@@ -23,7 +23,82 @@ body{
     z-index: -1;
 }
 
-.TopButtonsDiv ul li{
+.TopContainer{
+	width: 80%;
+	margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+}
+
+.SubContainer{
+    display: flex;
+    display: inline-block;
+    vertical-align: top;
+}
+
+header {
+    background-color: white;
+  /* background: #52c76f; */
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left:25px;
+  margin-right: 25px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav li a {
+    font-size: 33px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav li a:hover {
+  color: rgb(50, 168, 35);
+}
+
+nav li a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav li a:hover::before {
+  width: 100%;
+}
+
+
+/* .TopButtonsDiv ul li{
     display: inline-block;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -40,17 +115,49 @@ body{
     text-transform: uppercase;
     letter-spacing: 1.2px;
     display: flex;
+    z-index: 1;
 }
 
 nav ul li:not(:first-child){
     margin-left: 30px;
 }
 
+.TopLeftButtonUl li::before{
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 100%;
+    background-color: #0D7CFF;
+    right: 0;
+    z-index: 0;
+    top: 33.33%;
+}
+
+.TopLeftButtonUl li ::after{
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 100%;
+    background-color: #0D7CFF;
+    left: 0;
+    z-index: 0;
+    bottom: 0;
+}
+
+.TopLeftButtonUl li a::before{
+    position: absolute;
+    content: "";
+    height: 33.33%;
+    width: 0;
+    background-color: #0D7CFF;
+    bottom: 66.66%;
+    left: 0;;
+}
+
 
 .TopButtonsDiv{
-    height: 100px;
-    z-index: 2;
-    background-color: darkseagreen;
+    height:fit-content;
+    background-color: white;
     display: flex;
     justify-content: center;
     box-shadow: 0px 15px 10px -15px #111;
@@ -59,11 +166,11 @@ nav ul li:not(:first-child){
 .SeeMore{
     margin-top: 34%;
     margin-left: 21.5%;
-}
+} */
 
 .SecondContainer,.ThirdContainer{
     display: flex;
-    margin-top: 150px;
+    margin-top: 125px;
 }
 
 .SecondParaDiv,.ThirdParaDiv{
@@ -71,16 +178,38 @@ nav ul li:not(:first-child){
     margin-left: 50px;
     margin-right: 100px;
 }
+#BottleIcon{
+    margin-left: 10px;
+}
+
+#SecondIcon{
+    display: flex;
+    justify-content: center;
+}
 
 #FirstPara,#SecondPara{
     font-size: 20px;
     font-family: Poppins,sans-serif;
-    color: rgb(0, 59, 94);
+    color: rgb(0, 36, 56);
 }
 
+.CardContainer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-left: 200px;
+    margin-right: 200px;
+}
 
+.CardOne,.CardTwo,.CardThree,.CardFour{
+    display: flex;
+    border: grey 2px solid;
+    margin: 30px;
+    height: 300px;
+    padding: 50px;
 
+}
 
-
+/* Here */
 
 
