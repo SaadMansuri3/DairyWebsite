@@ -1,1 +1,135 @@
-Contact Html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Home Page">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Saad Mansuri">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+    
+        <link rel="stylesheet" href="../Css/ContactUs.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="TopContainer">
+                <nav role='navigation'>
+                    <div class="SubContainer">
+                        <ul>
+                            <li><a href="Products.html">Products</a></li>
+                            <li><a href="Recipie.html">Recipie</a></li>
+                        </ul>
+                    </div>
+                    <div class="SubContainer">
+                        <a href="HomePage.html"><img src="../Images/CowLogo.png" id="HomeLogoBtn" width="70" height="70"></a>
+                    </div>    
+                    <div class="SubContainer">
+                        <ul>
+                            <li><a href="VisitUs.html">Visit Us!</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <span><img id="TopLeavesId" src="../Images/TopLeavesEdited.png" alt="TopLeaves" width="520" height="150"></span>
+        </header>
+
+        <div class="mainContainer">
+            <div class="ParaContainer">
+                <h1>Contact Us</h1>
+                <br><br><br>
+                <div id="IntroPara">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam hic magnam illo alias facere, et, delectus ducimus officia error eos, reprehenderit incidunt explicabo asperiores aperiam illum! Quibusdam nulla incidunt obcaecati.
+                </div>
+                <button class="FirstButton" href><span class='text'>Ask Us!</span><span class="icon"><img src="../Images/Arrow.png" width="14" height="24"></span></button>
+
+            </div>
+
+            <div class="ImageContainer">
+                <img src="../Images/ContactPage/ContactUs.jpg" alt="Contact Pic" width="700" height="550">
+            </div>
+        </div>
+
+        <div class="QueryBox">
+            <div class="QueryHead">
+                <img id="Querylady" src="../Images/ContactPage/QueryLady.jpg" alt="QueryLady">
+
+                <h1> Send A Query!</h1>
+            </div>
+
+
+            <div class="QuestionDivContainer">
+                <div class="QuestionDiv">
+                    <form onsubmit="return validateForm()" action="Success.html"></form>
+                        <label for="firstname">Name: </label>
+                        <input type="text" id="firstname" onkeyup="getValue()" onblur="FormValidate1()">
+                        <br><span id="error1"></span><br><br>
+
+                        <label for="pass">Password: </label>
+                        <input type="password" id="pass" onkeyup="getValue()" onblur="FormValidate2()">
+                        <br><span id="error2"></span><br><br>
+
+                        <label for="confirmpass">Confirm Password: </label>
+                        <input type="password" id="confirmpass" onkeyup="getValue()" onblur="FormValidate3()">
+                        <br><span id="error3"></span><br>
+
+
+                        <label>Show Password:
+                            <input type="checkbox" id="ShowpassCheck" onchange="FormValidate5()">
+                        </label><br><br>
+                    
+                    
+                        <label for="MobileNo">Mobile: </label>
+                        <input type="number" id="mobile" onkeyup="getValue()" onblur="FormValidate4()">
+                        <br><span id="error4"></span><br>
+                    
+                        <label>Remember Me:
+                            <input type="checkbox" id="Rememberme" value="RememberME" name="remember" checked>
+                        </label>
+                        <br><br><br>
+                        <textarea name="textarea" rows="10" cols="40">Write your Query here!</textarea>
+                        <hr>
+                        <button onclick="validateForm()" class="SecondButton" href><span class='text'>Submit</span><span class="icon"><img src="../Images/Arrow.png" width="14" height="24"></span></button>
+                    </form>
+                </div>
+
+            </div>
+            
+                <div class="socialmediaHandles">
+                    <div class="SocialBox">
+
+                    </div>
+                </div>
+
+
+
+        <footer>
+            <div class="FooterContainer">
+                <div class="LineDividerDiv">
+                    <img id="LineDivider" src="../Images/LineDivider.png" alt="LineDivider" width="950" >
+                </div>
+
+                <div class="SubContainerBottom">
+                
+                    <div class="LeftParaDiv">
+                        <h1 id="GetInTouch">Get In Touch!</h1>
+                        <p id="LastPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam saepe nisi odit nemo animi! Architecto commodi magni sunt voluptatibus dolores voluptate fugit saepe possimus, odio omnis. 
+                        <br><br>
+                        <button class="FooterButton" href><span class='text'>Lets Talk!</span><span class="icon"><img src="../Images/Arrow.png" width="14" height="24"></span></button>
+                    </div>
+                    <img id="SideLeafRight" src="../Images/SideLeafRight.png" width="200" height="400" alt="SideLeaf">
+                </div>
+
+                <div class="LeftImageDiv">
+                    <img id="CowCrazing" src="../Images/CowsGrazingEdited.png"  alt="CowGrazing">                    
+                </div>
+
+            </div>
+        </footer>
+
+
+    <script src="../JavaScript/Contact.js"></script>
+</body>
+
+</html>

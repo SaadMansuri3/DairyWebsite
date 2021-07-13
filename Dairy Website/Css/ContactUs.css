@@ -1,0 +1,327 @@
+@font-face{
+    src: url(../Fonts/Poppins-Black.ttf);
+    font-family: PoppinsBlack;
+}
+@font-face{
+    src: url(../Fonts/Poppins-Regular.ttf);
+    font-family: PoppinsReg;
+}
+@font-face{
+    src: url(../Fonts/Roboto-Regular.ttf);
+    font-family: RobotoReg;
+}
+@font-face{
+    src: url(../Fonts/CormorantGaramond-Medium.ttf);
+    font-family: CormorantMed;
+}
+@font-face{
+    src: url(../Fonts/CormorantGaramond-Regular.ttf);
+    font-family: CormorantReg;
+}
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#HomeLogoBtn:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.TopContainer{
+	width: 100%;
+	margin: 0 auto;
+    font-family: PoppinsReg;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 5px 15px rgb(216, 216, 216);
+}
+
+.SubContainer{
+    display: flex;
+    display: inline-block;
+    vertical-align: top;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left:25px;
+  margin-right: 25px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav li a {
+    font-size: 33px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav li a:hover {
+  color: rgb(50, 168, 35);
+}
+
+nav li a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav li a:hover::before{
+  width: 100%;
+}
+
+#TopLeavesId{
+    margin-left: 60px;
+    display: flex;
+    display: inline-block;
+}
+
+/* Top Nav Bar ends Here */
+
+
+/* Buttons starts here */
+
+.FirstButton,.SecondButton,.ThirdButton,.FooterButton {
+    margin-top: 30px;
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+          -webkit-tap-highlight-color: transparent;
+  }
+  
+  button {
+      width: 150px;
+      height: 50px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      background: #97da61;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+      background: #97da61;
+  }
+  
+  button, button span {
+      transition: 200ms;
+  }
+  
+  button .text {
+      transform: translateX(35px);
+      color: black;
+      font-weight: bold;
+      font-family: CormorantReg;
+      font-size:  18px;
+  }
+  
+  button .icon {
+      position: absolute;
+      border-left: 1px solid #21f01a;
+      transform: translateX(110px);
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+
+  
+  button:hover {
+      background: #1aa130;
+  }
+  
+  button:hover .text {
+      color: transparent;
+  }
+  
+  button:hover .icon {
+      width: 150px;
+      border-left: none;
+      transform: translateX(0);
+  }
+  
+  button:focus {
+      outline: none;
+  }
+
+/* Button Ends Here */
+
+.mainContainer{
+    display: flex;
+
+}
+.ParaContainer,.ImageContainer{
+    margin-top: 50px;
+    display: inline-block;
+    margin-left: 250px;
+}
+
+h1{
+    font-size: 70px;
+    font-family:CormorantMed ;
+}
+
+#IntroPara{
+    font-size: 20px;
+    font-family: Poppins;
+    color: #001d3f;
+}
+
+
+.QuestionDiv{
+    margin-left: 200px;
+    margin-right: 200px;
+    
+}
+
+.QueryHead{
+    margin-top: 200px;    
+    margin-left: 200px;
+}
+
+#Querylady{
+    margin-left: 270px;
+    margin-bottom: -60px;
+}
+
+#error1,#error2,#error3,#error4{
+    font-family: PoppinsReg;
+    color: red;
+}
+
+.QuestionDivContainer{
+    display: flex;
+    display: inline-block;
+}
+
+.socialmediaHandles{
+    display: flex;
+    display: inline-block;
+    margin-left: 150px;
+    vertical-align: top;
+}
+.SocialBox{
+    display: flex;
+    display: inline-block;
+    margin: 100px auto 0;
+    width: 600px;
+    height: 250px;
+    perspective: 1000px;
+    border-radius: 30px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+/* FooterCss Starts Here */
+
+.LineDividerDiv{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}  
+
+.SubContainerBottom{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px
+}
+
+.LeftParaDiv{
+    display: inline-block;
+    margin-right:250px ;
+}
+
+.RightBoxDiv{
+    display: flex;
+    justify-content: left;
+
+}
+
+#GetInTouch{
+    font-size: 50px;
+    color: #001d3f;
+}
+#LastPara{
+    font-size: 20px;
+    font-family: PoppinsReg;
+    color: #001d3f;
+}
+ 
+#SideLeafRight{
+    margin-right: -200px;
+}
+
+.LeftImageDiv{
+    display: flex;
+    justify-content: center;
+}
+#CowCrazing{
+    transform: scale(1.2);
+}
