@@ -53,15 +53,6 @@ body{
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
 
-#SecondDiv{
-    background-image: url(../Images/WihTitle.jpg);
-    background-repeat: no-repeat center fixed;
-    background-size: cover;
-    width: 100%;
-    height:114vh;
-    z-index: -1;
-}
-
 .TopContainer{
 	width: 100%;
 	margin: 0 auto;
@@ -69,6 +60,7 @@ body{
     font-weight: 900;
     display: flex;
     justify-content: center;
+    box-shadow: 20px 5px 15px rgb(216, 216, 216);
 }
 
 .SubContainer{
@@ -142,6 +134,8 @@ nav li a:hover::before{
     display: flex;
     display: inline-block;
 }
+
+/* End of the Common Header */
 
 .MainScreenContainer{
     display: flex;
@@ -255,7 +249,7 @@ h1,h2,h3{
 
 /* Button Css Here */
 
-.noselect,SecondButton,.ThirdButton,.FooterButton {
+.noselect,.SecondButton,.ThirdButton,.FooterButton {
     -webkit-touch-callout: none;
       -webkit-user-select: none;
        -khtml-user-select: none;
