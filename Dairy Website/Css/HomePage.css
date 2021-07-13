@@ -137,6 +137,38 @@ nav li a:hover::before{
   width: 100%;
 }
 
+#TopLeavesId{
+    margin-left: 60px;
+    display: flex;
+    display: inline-block;
+}
+
+.MainScreenContainer{
+    display: flex;
+    margin-left: 200px;
+    margin-right: 150px;
+}
+
+#PinewoodId{
+    font-size:80px;
+    font-family:RobotoReg !important;
+    margin-bottom: -40px;
+    color: #215000;
+}
+#DairyId{
+    font-size: 60px;
+    font-family: Roboto !important;
+    margin-left: 120px;
+    color: #376417;
+}
+
+#IntroPara,#LastPara{
+
+    font-size: 20px;
+    font-family: Poppins;
+    color: #001d3f;
+}
+
 h1,h2,h3{
     font-family: CormorantReg;
 }
@@ -163,7 +195,7 @@ h1,h2,h3{
 #FirstPara,#SecondPara{
     font-size: 20px;
     font-family: Poppins,sans-serif;
-    color: #002855
+    color: #001d3f
 }
 
 .CardContainer{
@@ -174,18 +206,56 @@ h1,h2,h3{
     margin-right: 200px;
 }
 
-.CardOne,.CardTwo,.CardThree,.CardFour{
+.CardOutline{
     display: flex;
-    border: grey 2px solid;
-    margin: 30px;
-    height: 300px;
-    padding: 50px;
+    border: rgba(128, 128, 128,0.4) 2px solid;
+    border-radius:8px;
+    margin: 25px;
+    height: 210px;
+    width: 500px;
+    padding: 20px;
+    transition: transform .2s ease-in-out;
 
+}
+
+.CardOutline:hover{
+
+    transform: scale(1.1);
+    border: rgb(91, 255, 99) 2px solid;
+    background-color: rgb(51, 129, 51);
+}
+
+.CardOutline:hover .CardPara{
+    color: white;
+}
+
+.CardImage{
+    display: flex;
+    margin-top: 25px;
+}
+
+.CardPara{
+    display: flex;
+    display: inline-block;
+    margin-left: 30px;
+    font-family: PoppinsReg;
+    color: rgb(2, 80, 2);
+}
+.CardPara:hover{
+    color: white;
+}
+
+.SpecialityDiv{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 /* Button Css Here */
 
-.noselect {
+.noselect,.FooterButton {
     -webkit-touch-callout: none;
       -webkit-user-select: none;
        -khtml-user-select: none;
@@ -201,11 +271,11 @@ h1,h2,h3{
       cursor: pointer;
       display: flex;
       align-items: center;
-      background: rgb(52, 236, 98);
+      background: #97da61;
       border: none;
       border-radius: 5px;
       box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
-      background: #22ca4c;
+      background: #97da61;
   }
   
   button, button span {
@@ -214,7 +284,7 @@ h1,h2,h3{
   
   button .text {
       transform: translateX(35px);
-      color: white;
+      color: black;
       font-weight: bold;
       font-family: CormorantReg;
       font-size:  18px;
@@ -234,7 +304,7 @@ h1,h2,h3{
 
   
   button:hover {
-      background: #028618;
+      background: #1aa130;
   }
   
   button:hover .text {
@@ -250,3 +320,34 @@ h1,h2,h3{
   button:focus {
       outline: none;
   }
+
+.LineDividerDiv{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}  
+
+.SubContainer{
+    margin-top: 200px;
+    margin-left: 250px;
+    margin-right: 250px;
+    justify-content: space-between;
+}
+
+.LeftParaDiv{
+    display: flex;
+    display: inline-block;
+    background-color: crimson;
+    width: 500px;
+}
+
+.RightBoxDiv{
+    display: flex;
+    display: inline-block;
+    background-color: cornsilk;
+}
+
+#GetInTouch{
+    font-size: 50px;
+    color: #001d3f;
+}
