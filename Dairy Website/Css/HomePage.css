@@ -162,7 +162,7 @@ nav li a:hover::before{
     color: #376417;
 }
 
-#IntroPara,#LastPara{
+#IntroPara{
 
     font-size: 20px;
     font-family: Poppins;
@@ -255,7 +255,7 @@ h1,h2,h3{
 
 /* Button Css Here */
 
-.noselect,.FooterButton {
+.noselect,SecondButton,.ThirdButton,.FooterButton {
     -webkit-touch-callout: none;
       -webkit-user-select: none;
        -khtml-user-select: none;
@@ -321,33 +321,52 @@ h1,h2,h3{
       outline: none;
   }
 
+
+/* Footer Css Below */
+
 .LineDividerDiv{
     margin-top: 200px;
     display: flex;
     justify-content: center;
 }  
 
-.SubContainer{
-    margin-top: 200px;
-    margin-left: 250px;
-    margin-right: 250px;
-    justify-content: space-between;
+.SubContainerBottom{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px
 }
 
 .LeftParaDiv{
-    display: flex;
     display: inline-block;
-    background-color: crimson;
-    width: 500px;
+    margin-right:250px ;
 }
 
 .RightBoxDiv{
     display: flex;
-    display: inline-block;
-    background-color: cornsilk;
+    justify-content: left;
+
 }
 
 #GetInTouch{
     font-size: 50px;
     color: #001d3f;
+}
+#LastPara{
+    font-size: 20px;
+    font-family: PoppinsReg;
+    color: #001d3f;
+}
+ 
+#SideLeafRight{
+    margin-right: -200px;
+}
+
+.LeftImageDiv{
+    display: flex;
+    justify-content: center;
+}
+#CowCrazing{
+    transform: scale(1.2);
 }
